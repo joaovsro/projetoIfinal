@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  /*   border: 1px solid black; */
+}
+
+body {
+  font-family: "Zilla Slab";
+  font-size: 1.8vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+ul {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+li {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  padding: 10px;
+  background: #0285b2;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  overflow: scroll;
+}
+
+hr {
+  color: azure;
+}
+
+a {
+  font-size: 2.4ch;
+  font-weight: 700;
+  color:grey;
+}
+
+a:hover {
+  color:#1a9dd9;
+}
+
+.bigtitle {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3ch;
+}
+.bigtitle2 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3ch;
+}
+.head1{
+  font: 900;
+  font-size: 2.8ch;
+  font-weight: bold;
+  color: #1a9dd9;
+}
+.references{
+  font:500;
+  font-style: italic;
+  color: #1a9dd9
+}
+.citations {
+  font-style: italic;
+  font-weight: 500;
+  font-size:1.6ch;
+  color: rgb(139, 136, 136);
+}
+li:hover {
+  background: #1a9dd9;
+}
+li.active {
+  flex: 2;
+  background: #fff;
+  cursor: default;
+}
+li.active h2 {
+  color: #1a9dd9;
+}
+
+li.active .section-content {
+  flex: 12;
+  opacity: 1;
+  //transform: scaleX(1);
+  color: #000000;
+}
+
+li .section-title {
+  flex: 4;
+  display:flex;
+  align-items:flex-end;
+  position:relative;
+  width: 100%;
+  padding: 30px;
+  text-align:left;
+  color: white;
+}
+li .section-title h2 {
+  margin: 0;
+  transform: rotate(-90deg);
+  white-space: normal;
+}
+li .section-content {
+  flex:auto;
+  //display: flex;
+  align-items: center;
+  margin-right: 4vh;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.25s 0.1s ease-out;
+  color: black;
+}
