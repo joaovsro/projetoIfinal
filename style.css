@@ -47,6 +47,17 @@ a:hover {
   color:#1a9dd9;
 }
 
+img {; 
+  filter: gray;
+  -webkit-filter: grayscale(100%); 
+}
+
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  transition: 1s;
+}
+
 .bigtitle {
   font-weight: 900;
   font-style: italic;
